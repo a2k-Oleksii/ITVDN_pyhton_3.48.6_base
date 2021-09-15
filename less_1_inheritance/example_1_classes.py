@@ -6,8 +6,10 @@ class Human:
 
     def get_name(self):
         return self.name
+
     def get_age_and_name(self):
         return self.age, self.name
+
 
 human_1 = Human(age=23, name='Nick', gender="male")
 print(human_1.age, human_1.name, human_1.gender)
