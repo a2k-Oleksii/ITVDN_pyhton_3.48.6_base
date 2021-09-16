@@ -13,6 +13,9 @@ class Cat:
 
 
 class Tiger(Cat):
+    def __init__(self, color, cat_type):
+        Cat.__init__(self, color, cat_type)
+
     def set_size(self):
         if self.cat_type == 'wild':
             self.size = 'big'
@@ -26,7 +29,7 @@ cat.set_size()
 cat2.set_size()
 print(cat.size)
 print(cat2.size)
-
+print('-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_-_')
 tiger = Tiger(color='white', cat_type='wild')
 tiger2 = Tiger(color='black', cat_type='indoor')
 tiger.set_size()
