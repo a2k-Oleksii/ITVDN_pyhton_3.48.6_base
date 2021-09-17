@@ -17,7 +17,7 @@ print(user.name)
 
 
 class Worker:
-    RIHTS = 'Equal'
+    RIGHTS = 'Equal'
     SALARY_MAP = {
         'A': 100,
         'B': 200,
