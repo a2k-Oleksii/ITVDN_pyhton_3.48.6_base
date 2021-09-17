@@ -11,6 +11,11 @@ class User:
         self.__name = value
 
 
+user = User(name='Tom')
+user.name = 'Dimon'
+print(user.name)
+
+
 class Worker:
     RIHTS = 'Equal'
     SALARY_MAP = {
