@@ -1,9 +1,9 @@
 class Test:
     def __init__(self, test_value):
-        self.__public_attr = test_value
+        self.__private_attr = test_value
 
     def get_privet_attr(self):
-        return self.__public_attr
+        return self.__private_attr
 
     @staticmethod
     def __private_function():
