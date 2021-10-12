@@ -42,17 +42,17 @@ class Database:
 
 
 if __name__ == '__main__':
-    data_1 = Data('Ukraine', 'Oleksii', 55, 'Men', 180, 87)
-    data_2 = Data('Russia', 'Aleksey', 35, 'Men', 175, 80)
-    data_3 = Data('England', 'Anna', 45, 'Women', 165, 63)
-    data_4 = Data('Australia', 'Alex', 33, 'Men', 183, 90)
-    data_5 = Data('China', 'Anchun', 15, 'Men', 169, 102)
+    user_1 = Data('Ukraine', 'Oleksii', 55, 'Men', 180, 87)
+    user_2 = Data('Russia', 'Aleksey', 35, 'Men', 175, 80)
+    user_3 = Data('England', 'Anna', 45, 'Women', 165, 63)
+    user_4 = Data('Australia', 'Alex', 33, 'Men', 183, 90)
+    user_5 = Data('China', 'Anchun', 15, 'Men', 169, 102)
     database_1 = Database()
-    database_1.write_data(data_3)
-    database_1.write_data(data_2)
-    database_1.write_data(data_4)
-    database_1.write_data(data_1)
-    database_1.write_data(data_5)
+    database_1.write_data(user_3)
+    database_1.write_data(user_2)
+    database_1.write_data(user_4)
+    database_1.write_data(user_1)
+    database_1.write_data(user_5)
     criteria_age = {'age': 25}
 
     result = database_1.read_data(criteria_age)
