@@ -9,7 +9,7 @@ class TestDatabase:
         self.db = ['A', 'B', 'E', 'S', 'A', 'Q']
  
         
-# Interprinator input information from user       
+# Interpritator input information from user
 class _Interpritator:
     _database = TestDatabase()
 
@@ -38,6 +38,7 @@ class _Interpritator:
 
 # Search information class
 class _SearchInfo():
+
     def _search(self, _database, search_info):
         try:
            index_info = _database.db.index(search_info)
@@ -49,6 +50,7 @@ class _SearchInfo():
 
 # Input information class
 class _InputInfo:
+
     def _set_info(self, _database, _input_info):
         _database.db.append(_input_info)
         return _database.db, "Your information add in the 'TestDatabase' from number {}".format(_database.db.__len__() - 1)
@@ -58,6 +60,7 @@ class _InputInfo:
 class _OutputInfo:
     _result = ''
     _counter = 0
+
     def _get_database_information(self, _database):
         for element in _database.db:
             self._result += ("element # {}\tValue: {}{}".format(self._counter, element, '\n'))
@@ -84,7 +87,7 @@ class UserInterface:
                 _result = _interpritator._choise(user_input)
                 print(_result)
             elif user_input == "q":
-                print("You choise '{}' - Quit\nProgramm 'Test Database' is closed! Good by".format(user_input))
+                print("You choise '{}' - Quit\nProgram 'Test Database' is closed! Good by".format(user_input))
                 break
             else:
                 print("You input wrong char '{}'. Try again".format(user_input))
@@ -93,6 +96,7 @@ class UserInterface:
 class main:
     user_interface = UserInterface()
     user_interface.choise_of_action()
+
 
 if __name__ == '__main__':
     main()
