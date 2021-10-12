@@ -8,7 +8,7 @@ class Car:
         self.price = price
     
     def __eq__(self, other):
-        return self.name == other.name and self.model == other.model and self.price == other.price
+        return self.name == other._name and self.model == other.model and self.price == other.price
 
     def __repr__(self):
         return "\nCar:{}, model:{}, price:{}".format(self.name, self.model, self.price)
