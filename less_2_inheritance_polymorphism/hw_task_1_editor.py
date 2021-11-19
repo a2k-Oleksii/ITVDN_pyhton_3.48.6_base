@@ -26,7 +26,6 @@ class ProEditor(Editor):
 
 
 class main:
-
     __license_key = 'ZAQ12wsx'
     input_key = input("Input licence key from use version ProEditor or use FreeVersion: ")
     if input_key == __license_key:
@@ -36,7 +35,6 @@ class main:
         free_version = Editor()
         free_version.edit_document()
 
-    
 
 if __name__ == '__main__':
     main()
