@@ -26,6 +26,7 @@ def get_data(data_dict, keys):
         data = data[key]
     return data
 
+
 def get_data_rec(data_dict, keys, index=0):
     if index < len(keys):
         return get_data_rec(data_dict[keys[index]], keys, index + 1)
